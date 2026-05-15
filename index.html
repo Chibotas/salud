@@ -30,11 +30,14 @@ table, th, td {
 
     <p>Médico tratante:</p>
 
-    <input type="text" id="fname" name="fname" placeholder="Nava">
+    <input type="text" id="Médico tratante" name="fname" placeholder="Nava">
 
     </td>
 
-    <td>Tobias</td>
+    <td>Fecha de Historia clinica: <br><br>
+  
+      <input type="text" id="Fecha de Historia clinica" name="fname" placeholder="Nava">
+    </td>
 
 
 
@@ -42,14 +45,14 @@ table, th, td {
 
   <tr>
 
-    <td>Sexo: <br><br> 
+    <td>Nombre del paciente: <br><br> 
         
-        <input type="text" id="fname" name="fname" placeholder="Hombre/Mujer">
+        <input type="text" id="Nombre del paciente" name="fname" placeholder="Hombre/Mujer">
 
 </td>
-    <td>Peso    <br><br> 
+    <td>Edad:  <br><br> 
 
-<input type="text" id="fname" name="fname" placeholder="68kg">
+<input type="text" id="Edad " name="fname" placeholder="68kg">
     </td>
 
  
@@ -60,14 +63,33 @@ table, th, td {
 
     <tr>
 
-  <td>Religion    <br><br> 
+  <td>Domicilio: <br><br> 
 
-<input type="text" id="fname" name="fname" placeholder="Mormon">
+<input type="text" id="Domicilio" name="fname" placeholder="avenida">
     </td>
 
 
-    <td>14</td>
+   <td>Telefono: <br><br> 
 
+<input type="text" id="Telefono" name="fname" placeholder="663456487">
+    </td>
+
+  </tr>
+
+
+
+    <tr>
+
+    <td>Datos completos de familiar responsable: <br><br> 
+
+<input type="text" id=">Datos completos de familiar responsable" name="fname" placeholder="Juan Pablo Osuna Gutierrez ">
+    </td>
+
+
+    <td>Religion: <br><br> 
+
+<input type="text" id="Religion" name="fname" placeholder="Mormon">
+    </td>
  
 
   </tr>
@@ -76,36 +98,334 @@ table, th, td {
 
     <tr>
 
-    <td>16</td>
+    <td>Fecha de nacimiento : <br><br> 
 
-    <td>14</td>
-
+<input type="date" id="Fecha de nacimiento" name="fname" placeholder="Mormon">
+    </td>
  
 
-  </tr>
+  <td>Peso<br> 
 
-
-
-    <tr>
-
-    <td>16</td>
-
-    <td>14</td>
+<input type="text" id="Peso" name="fname" placeholder="Mormon">
+    </td>
 
  
 
   </tr>
 
 </table>
+<br>
+<p>Antecedentes familiares y Hereditarios</p>
+<table style="width:100%">
+
+  <tr>
+
+    <td>
+
+    <p>Hereditarios:</p>
+
+    <input type="text" id="Hereditarios" name="fname" placeholder="Diabetes,artitris,esquizofrenia">
+
+    </td>
+
+    <td>Familiares: <br><br>
+  
+      <input type="text" id="Familiares" name="fname" placeholder="Hemofilia,Hipertension">
+    </td>
 
 
 
-<p>To understand the example better, we have added borders to the table.</p>
+  </tr>
+</table>
+
+
+
+
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Antecedentes Personales No Patológicos</h2>
+
+<table style="width:100%">
+<tr>
+   <td>Lugar de Nacimiento: <input type="text" id="Lugar de Nacimiento" name="fname" placeholder="Tijuana"></td>
+    <td>Lugar de residencia: <input type="text" id="Lugar de residencia" name="fname" placeholder="Tijuana"> <br> Fecha: <input type="text" id="Fecha " name="fname" placeholder="25 años"></td>
+  </tr>
+  <tr>
+    <td>Hábito tabáquico: <input type="text" id="Hábito tabáquico" name="fname" placeholder="usual"> </td>
+    <td>Ocupación actual: Hogar</td>
+  </tr>
+  <tr>
+    <td>Hábito alcohólico:  <input type="text" id="Hábito alcohólico" name="fname" placeholder="niega"> </td>  </td>
+    <td>Tipo de Sangre:<input type="text" id="Tipo de Sangre" name="fname" placeholder="O positivo"></td>
+  </tr>
+  <tr>
+    <td>Ejercicio:<input type="text" id="Ejercicio" name="fname" placeholder="2 veces a la semana"></td>
+    <td>Hábitos de higiene:<input type="text" id="Hábitos de higiene" name="fname" placeholder="Se cepilla los dietes a diario"></td>
+  </tr>
+  <tr>
+    <td>Adicciones: <input type="text" id="Adicciones" name="fname" placeholder="Ninguna"> </td>
+    <td>Alergias: <input type="text" id="Alergias" name="fname" placeholder="Penicilina"></td>
+  </tr>
+
+</table>
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Antecedentes Personales Patológicos:</h2>
+
+<table style="width:100%">
+<tr>
+    <td><input type="text" id="antecedentespat" name="fname" placeholder="Positivo hace una semana transfusional ">
+    <td>Fecha de inicio:<input type="date" id="Fechainicio" name="fname" placeholder="Ninguna"> 
+</td>
+  </tr>
+
+</table>
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Antecedentes Ginecoobstetricos:</h2>
+
+<table style="width:100%">
+<tr>
+    <td>Menarca: <input type="text" id="Menarca" name="fname" placeholder="12 "></td>
+    <td>FUR: <input type="text" id="FUR" name="fname" placeholder="45"></td>
+    <td>Método anticonceptivo:<input type="text" id="Método anticonceptivo" name="fname" placeholder="Ninguno"></td>
+  </tr>
+  <tr>
+    <td>G: 3 P:0 C: 3 A: 0</td>
+    <td>Fecha Papanicolau:<input type="text" id="Fecha Papanicolau" name="fname" placeholder="mas de 20 años"></td> </td>
+    <td> Fecha Mastografía: <input type="date" id="Fecha Mastografía" name="fname" placeholder="Ninguna"></td>
+  </tr>
+
+
+</table>
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Medicación Actual:</h2>
+
+<table style="width:100%">
+<tr>
+    <td>Medicamento:<input type="text" id="Adicciones" name="fname" placeholder="Ninguna"></td>
+    <td>Dosis: 5<input type="text" id="Adicciones" name="fname" placeholder="Ninguna"></td>
+    <td>Fecha de inicio: <input type="date" id="Adicciones" name="fname" placeholder="Ninguna"></td>
+  </tr>
+  <tr>
+    <td>Suplementos alimentarios <input type="text" id="Adicciones" name="fname" placeholder="Calcio, probioticos,complejo B, multivitaminicos."></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+</table>
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Padecimiento Actual</h2>
+
+<table style="width:100%">
+<tr>
+    <td> <input type="text" id="Adicciones" name="fname" placeholder="Refiere inicio de padecimiento desde el día 31 de marzo con sintomatología…">Refiere inicio de padecimiento desde el día 31 de marzo con sintomatología…</td>
+
+</table>
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Interrogatorio por Aparatos y Sistemas</h2>
+
+<table style="width:100%">
+<tr>
+    <td>Digestivo:</td>
+    <td><input type="text" id="Adicciones" name="fname" placeholder="Nausea,mareo"></td>
+</tr>
+<tr>
+    <td>Respiratorio: </td>
+    <td><input type="text" id="Adicciones" name="fname" placeholder="Niega sintomas">.</td>
+</tr>
+<tr>
+    <td>Circulatorio:</td>
+    <td><input type="text" id="Adicciones" name="fname" placeholder="Edema de miembros inferiores, niega síntomas."></td>
+</tr>
+<tr>
+    <td>Musculoesquelético: </td>
+    <td><input type="text" id="Adicciones" name="fname" placeholder="Debilidad generalizada, edema e hipersensibilidad de miembros inferiores."></td>
+</tr>
+<tr>
+    <td>Nervioso:</td>
+    <td><input type="text" id="Adicciones" name="fname" placeholder="Niega sintomas"></td>
+</tr>
+<tr>
+    <td>Urinario:</td>
+    <td><input type="text" id="Adicciones" name="fname" placeholder="Disuria, presencia de sonda Foley."></td>
+</tr>
+<tr>
+    <td>Reproductor:</td>
+    <td> <input type="text" id="Adicciones" name="fname" placeholder="Interrogados y negados"></td>
+</tr>
+<tr>
+    <td>Sentidos: </td>
+    <td><input type="text" id="Adicciones" name="fname" placeholder="Uso de lentes para leer">.</td>
+</tr>
+
+</table>
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Exploración Física</h2>
+
+<table style="width:100%">
+<tr>
+    <td>TA: <input type="text" id="Adicciones" name="fname" placeholder="116 /80 mmHg"></td>
+    <td>Pulso:<input type="text" id="Adicciones" name="fname" placeholder="77 por min."> </td>
+    <td>FR:<input type="text" id="Adicciones" name="fname" placeholder="22 por min."> </td>
+    <td>Sat: <input type="text" id="Adicciones" name="fname" placeholder="94%"> </td>
+    <td>Temp:<input type="text" id="Adicciones" name="fname" placeholder=" 37.4 , oC"> </td>
+  </tr>
+  <tr>
+    <td>Inspección <input type="text" id="Adicciones" name="fname" placeholder="Auscultación,Palpación,Percusión."> <br><br><input type="text" id="Adicciones" name="fname" placeholder="Instrumental o armada…"> <input type="text" id="Adicciones" name="fname" placeholder="directo o indirecto."></td>
+</tr>
+
+</table>
+
+<h5>Exámenes de laboratorio y gabinete:</h5>
+
+<h5>Impresión diagnóstica:</h5> <p><input type="text" id="Adicciones" name="fname" placeholder="Posible urosepsis, descartar perforación de tubo digestivo secundario a procedimiento bariátirico."></p>
+
+<h5>Plan Diagnóstico:</h5> <p><input type="text" id="Adicciones" name="fname" placeholder="Clínico, exámenes de laboratorio y gabinete…"></p>
+
+<h5>Plan Terapéutico:</h5> <p><input type="text" id="Adicciones" name="fname" placeholder="En hoja correspondiente."></p>
+
+<h5>Nombre y Firma de quien realiza la historia clínica</h5>
+ 
+<script>
+function enviar() {
+
+  const fechaHistoriaClinica = document.getElementById("fechaHistoriaClinica").value;
+  const nombrePaciente = document.getElementById("nombrePaciente").value;
+  const edad = document.getElementById("edad").value;
+  const domicilio = document.getElementById("domicilio").value;
+  const telefono = document.getElementById("telefono").value;
+  const familiarResponsable = document.getElementById("familiarResponsable").value;
+  const religion = document.getElementById("religion").value;
+  const fechaNacimiento = document.getElementById("fechaNacimiento").value;
+  const peso = document.getElementById("peso").value;
+  const lugarNacimiento = document.getElementById("lugarNacimiento").value;
+
+  document.getElementById("mensaje").innerText = "Completa los campos";
+
+  if (
+    fechaHistoriaClinica === "" ||
+    nombrePaciente === "" ||
+    edad === "" ||
+    domicilio === "" ||
+    telefono === "" ||
+    familiarResponsable === "" ||
+    religion === "" ||
+    fechaNacimiento === "" ||
+    peso === "" ||
+    lugarNacimiento === ""
+  ) {
+    return;
+  }
+
+  const datos = {
+    fechaHistoriaClinica,
+    nombrePaciente,
+    edad,
+    domicilio,
+    telefono,
+    familiarResponsable,
+    religion,
+    fechaNacimiento,
+    peso,
+    lugarNacimiento
+  };
+
+  fetch("https://script.google.com/macros/s/AKfycbzh8e3xBfaZSFLBcjGslnyAE_XC6qjATBKAa5i_gDz7cyd2u-4kAPzm2RmiX8PPbTXefg/exec", {
+    method: "POST",
+    body: JSON.stringify(datos),
+    mode: "no-cors"
+  })
+    .then(() => {
+      document.getElementById("mensaje").innerText = "Datos enviados";
+    })
+    .catch(() => {
+      document.getElementById("mensaje").innerText = "Error al enviar";
+    });
+
+  // limpiar
+  document.getElementById("Médico tratante").value = "";
+  document.getElementById("Fecha de Historia clinica").value = "";
+  document.getElementById("Nombre del paciente").value = "";
+  document.getElementById("Edad ").value = "";
+  document.getElementById("Domicilio").value = "";
+  document.getElementById("Telefono").value = "";
+  document.getElementById(">Datos completos de familiar responsable").value = "";
+  document.getElementById("Religion").value = "";
+  document.getElementById("Fecha de nacimiento").value = "";
+  document.getElementById("Peso").value = "";
+  document.getElementById("Hereditarios").value = "";
+  document.getElementById("Familiares").value = "";
+  document.getElementById("Lugar de Nacimiento").value = "";
+  document.getElementById("Lugar de residencia").value = "";
+  document.getElementById("Fecha ").value = "";
+  document.getElementById("Hábito tabáquico").value = "";
+  document.getElementById("Hábito alcohólico").value = "";
+  document.getElementById("Tipo de Sangre").value = "";
+  document.getElementById("Ejercicio").value = "";
+  document.getElementById("Hábitos de higiene").value = "";
+  document.getElementById("Adicciones").value = "";
+  document.getElementById("Alergias").value = "";
+  document.getElementById("antecedentespat").value = "";
+  document.getElementById("Fechainicio").value = "";
+  document.getElementById("Menarca").value = "";
+  document.getElementById("FUR").value = "";
+  document.getElementById("Método anticonceptivo").value = "";
+  document.getElementById("Fecha Papanicolau").value = "";
+  document.getElementById("Fecha Mastografía").value = "";
+}
+
+
+</script>
 
 
 
 </body>
 
 </html>
-
->
