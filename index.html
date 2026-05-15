@@ -153,8 +153,8 @@ table, th, td {
 
 <table style="width:100%">
 <tr>
-   <td>Lugar de Nacimiento: <input type="text" id="Lugar de Nacimiento" name="fname" placeholder="Tijuana"></td>
-    <td>Lugar de residencia: <input type="text" id="Lugar de residencia" name="fname" placeholder="Tijuana"> <br> Fecha: <input type="text" id="Fecha " name="fname" placeholder="25 años"></td>
+   <td>Lugar de Nacimiento: <input type="d" id="Lugar de Nacimiento" name="fname" placeholder="Tijuana"></td>
+    <td>Lugar de residencia: <input type="text" id="Lugar de residencia" name="fname" placeholder="Tijuana"> <br> Fecha: <input type="date" id="Fecha " name="fname" placeholder="25 años"></td>
   </tr>
   <tr>
     <td>Hábito tabáquico: <input type="text" id="Hábito tabáquico" name="fname" placeholder="usual"> </td>
@@ -332,23 +332,26 @@ table, th, td {
 <h5>Plan Terapéutico:</h5> <p><input type="text" id="Adicciones" name="fname" placeholder="En hoja correspondiente."></p>
 
 <h5>Nombre y Firma de quien realiza la historia clínica</h5>
- 
+<button type="button" onclick="enviar()">Enviar datos</button>
+<p id="mensaje"></p>
 <script>
 function enviar() {
 
-  const fechaHistoriaClinica = document.getElementById("fechaHistoriaClinica").value;
-  const nombrePaciente = document.getElementById("nombrePaciente").value;
-  const edad = document.getElementById("edad").value;
-  const domicilio = document.getElementById("domicilio").value;
-  const telefono = document.getElementById("telefono").value;
-  const familiarResponsable = document.getElementById("familiarResponsable").value;
-  const religion = document.getElementById("religion").value;
-  const fechaNacimiento = document.getElementById("fechaNacimiento").value;
-  const peso = document.getElementById("peso").value;
-  const lugarNacimiento = document.getElementById("lugarNacimiento").value;
+  // 1. Leer valores de los 10 primeros campos
+  const fechaHistoriaClinica = document.getElementById("Fecha de Historia clinica").value;
+  const nombrePaciente = document.getElementById("Nombre del paciente").value;
+  const edad = document.getElementById("Edad ").value;
+  const domicilio = document.getElementById("Domicilio").value;
+  const telefono = document.getElementById("Telefono").value;
+  const familiarResponsable = document.getElementById(">Datos completos de familiar responsable").value;
+  const religion = document.getElementById("Religion").value;
+  const fechaNacimiento = document.getElementById("Fecha de nacimiento").value;
+  const peso = document.getElementById("Peso").value;
+  const lugarNacimiento = document.getElementById("Lugar de Nacimiento").value;
 
   document.getElementById("mensaje").innerText = "Completa los campos";
 
+  // 2. Validación de campos vacíos
   if (
     fechaHistoriaClinica === "" ||
     nombrePaciente === "" ||
@@ -364,6 +367,7 @@ function enviar() {
     return;
   }
 
+  // 3. Empaquetar los datos para el envío
   const datos = {
     fechaHistoriaClinica,
     nombrePaciente,
@@ -377,55 +381,31 @@ function enviar() {
     lugarNacimiento
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbzh8e3xBfaZSFLBcjGslnyAE_XC6qjATBKAa5i_gDz7cyd2u-4kAPzm2RmiX8PPbTXefg/exec", {
+  // 4. Envío de datos al Web App de Google
+ fetch("https://script.google.com/macros/s/AKfycbz01biL5pQ5u-I0Hen7V9YDj5U79DdyMERWHh8gxjmKf1FzVFVFL3lftnkGXuH9QGn0_w/exec", {
     method: "POST",
     body: JSON.stringify(datos),
     mode: "no-cors"
   })
     .then(() => {
       document.getElementById("mensaje").innerText = "Datos enviados";
+      limpiarFormulario();
     })
     .catch(() => {
       document.getElementById("mensaje").innerText = "Error al enviar";
     });
-
-  // limpiar
-  document.getElementById("Médico tratante").value = "";
-  document.getElementById("Fecha de Historia clinica").value = "";
-  document.getElementById("Nombre del paciente").value = "";
-  document.getElementById("Edad ").value = "";
-  document.getElementById("Domicilio").value = "";
-  document.getElementById("Telefono").value = "";
-  document.getElementById(">Datos completos de familiar responsable").value = "";
-  document.getElementById("Religion").value = "";
-  document.getElementById("Fecha de nacimiento").value = "";
-  document.getElementById("Peso").value = "";
-  document.getElementById("Hereditarios").value = "";
-  document.getElementById("Familiares").value = "";
-  document.getElementById("Lugar de Nacimiento").value = "";
-  document.getElementById("Lugar de residencia").value = "";
-  document.getElementById("Fecha ").value = "";
-  document.getElementById("Hábito tabáquico").value = "";
-  document.getElementById("Hábito alcohólico").value = "";
-  document.getElementById("Tipo de Sangre").value = "";
-  document.getElementById("Ejercicio").value = "";
-  document.getElementById("Hábitos de higiene").value = "";
-  document.getElementById("Adicciones").value = "";
-  document.getElementById("Alergias").value = "";
-  document.getElementById("antecedentespat").value = "";
-  document.getElementById("Fechainicio").value = "";
-  document.getElementById("Menarca").value = "";
-  document.getElementById("FUR").value = "";
-  document.getElementById("Método anticonceptivo").value = "";
-  document.getElementById("Fecha Papanicolau").value = "";
-  document.getElementById("Fecha Mastografía").value = "";
 }
 
-
+// 5. Función para limpiar todos los campos
+function limpiarFormulario() {
+  const inputs = document.querySelectorAll("input");
+  inputs.forEach(input => {
+    if (input.type === "text" || input.type === "date") {
+      input.value = "";
+    }
+  });
+}
 </script>
 
-
-
 </body>
-
 </html>
