@@ -1,417 +1,258 @@
+
 <!DOCTYPE html>
-
-<html>
-
-<style>
-
-table, th, td {
-
-  border:1px solid black;
-
-}
-
-</style>
-
-<body>
-
-
-
-  <p style="text-align: center;">Dirección de la unidad hospitalaria</p><br>
- <p style="text-align: center;">Hospital General Tijuana en Zona Río: AV. CENTENARIO 10851, Tijuana, B.C.</p><br>
-<div style="text-align: center;">
-  <img src="https://3.bp.blogspot.com/-TkM84bOpTQs/UGyXg1qrKuI/AAAAAAAABaw/vGwy6B9eAH0/s1600/LOGOTIPO+HOSPITAL+GENERAL+TIJUANA.jpg" alt="Logo Hospital General Tijuana" width="200" height="200">
-</div>
-<h1 style="text-align: center;">Historia Clínica acorde con la NOM vigente 168-SSA1-1998</h1>
-
-
-
-<table style="width:100%">
-
-  <tr>
-
-    <td>
-
-    <p>Médico tratante:</p>
-
-    <input type="text" id="Médico tratante" name="fname" placeholder="Dr. Nava García">
-
-    </td>
-
-    <td>Fecha de Historia clinica: <br><br>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia Clínica - Hospital General Tijuana</title>
   
-      <input type="text" id="Fecha de Historia clinica" name="fname" placeholder="2026/05/19">
-    </td>
-
-
-
-  </tr>
-
-  <tr>
-
-    <td>Nombre del paciente: <br><br> 
-        
-        <input type="text" id="Nombre del paciente" name="fname" placeholder="María Rodríguez López">
-
-</td>
-    <td>Edad:  <br><br> 
-
-<input type="text" id="Edad " name="fname" placeholder="68 años">
-    </td>
-
- 
-
-  </tr>
-
-
-
-    <tr>
-
-  <td>Domicilio: <br><br> 
-
-<input type="text" id="Domicilio" name="fname" placeholder="Avenida Paseo de la República 1500, Apt. 302">
-    </td>
-
-
-   <td>Telefono: <br><br> 
-
-<input type="text" id="Telefono" name="fname" placeholder="(66) 3456-4870">
-    </td>
-
-  </tr>
-
-
-
-    <tr>
-
-    <td>Datos completos de familiar responsable: <br><br> 
-
-<input type="text" id=">Datos completos de familiar responsable" name="fname" placeholder="Juan Pablo Osuna Gutiérrez - Hijo - (66) 3456-1234">
-    </td>
-
-
-    <td>Religion: <br><br> 
-
-<input type="text" id="Religion" name="fname" placeholder="Católica">
-    </td>
- 
-
-  </tr>
-
-
-
-    <tr>
-
-    <td>Fecha de nacimiento : <br><br> 
-
-<input type="date" id="Fecha de nacimiento" name="fname" placeholder="1958-05-19">
-    </td>
- 
-
-  <td>Peso<br> 
-
-<input type="text" id="Peso" name="fname" placeholder="68 kg">
-    </td>
-
- 
-
-  </tr>
-
-</table>
-<br>
-<p>Antecedentes familiares y Hereditarios</p>
-<table style="width:100%">
-
-  <tr>
-
-    <td>
-
-    <p>Hereditarios:</p>
-
-    <input type="text" id="Hereditarios" name="fname" placeholder="Diabetes mellitus tipo 2, Artritis reumatoide, Esquizofrenia en abuelo materno">
-
-    </td>
-
-    <td>Familiares: <br><br>
-  
-      <input type="text" id="Familiares" name="fname" placeholder="Hemofilia en primo hermano, Hipertensión arterial en padre">
-    </td>
-
-
-
-  </tr>
-</table>
-
-
-
-
-
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-
-<h2>Antecedentes Personales No Patológicos</h2>
-
-<table style="width:100%">
-<tr>
-   <td>Lugar de Nacimiento: <input type="text" id="Lugar de Nacimiento" name="fname" placeholder="Tijuana, Baja California"></td>
-    <td>Lugar de residencia: <input type="text" id="Lugar de residencia" name="fname" placeholder="Tijuana, Baja California"> <br> Años: <input type="text" id="Fecha " name="fname" placeholder="25 años"></td>
-  </tr>
-  <tr>
-    <td>Hábito tabáquico: <input type="text" id="Hábito tabáquico" name="fname" placeholder="Negado"> </td>
-    <td>Ocupación actual: <input type="text" id="Ocupacion" name="fname" placeholder="Jubilada - Anteriormente enfermera"></td>
-  </tr>
-  <tr>
-    <td>Hábito alcohólico:  <input type="text" id="Hábito alcohólico" name="fname" placeholder="Negado"> </td>  </td>
-    <td>Tipo de Sangre:<input type="text" id="Tipo de Sangre" name="fname" placeholder="O positivo"></td>
-  </tr>
-  <tr>
-    <td>Ejercicio:<input type="text" id="Ejercicio" name="fname" placeholder="2 veces a la semana, caminar 30 minutos"></td>
-    <td>Hábitos de higiene:<input type="text" id="Hábitos de higiene" name="fname" placeholder="Se cepilla los dientes 3 veces al día, higiene personal adecuada"></td>
-  </tr>
-  <tr>
-    <td>Adicciones: <input type="text" id="Adicciones" name="fname" placeholder="Ninguna"> </td>
-    <td>Alergias: <input type="text" id="Alergias" name="fname" placeholder="Penicilina, Amoxicilina"></td>
-  </tr>
-
-</table>
-
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-
-<h2>Antecedentes Personales Patológicos:</h2>
-
-<table style="width:100%">
-<tr>
-    <td><input type="text" id="antecedentespat" name="fname" placeholder="Positivo hace una semana - Transfusión sanguínea, Procedimiento bariátrico hace 3 años">
-    <td>Fecha de inicio:<input type="text" id="Fechainicio" name="fname" placeholder="01-05-26"> 
-</td>
-  </tr>
-
-</table>
-
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-
-<h2>Antecedentes Ginecoobstetricos:</h2>
-
-<table style="width:100%">
-<tr>
-    <td>Menarca: <input type="text" id="Menarca" name="fname" placeholder="12 años"></td>
-    <td>FUR: <input type="text" id="FUR" name="fname" placeholder="Menopausia hace 15 años"></td>
-    <td>Método anticonceptivo:<input type="text" id="Método anticonceptivo" name="fname" placeholder="Ninguno (post-menopáusica)"></td>
-  </tr>
-  <tr>
-    <td>G: 3 P: 2 C: 1 A: 0</td>
-    <td>Fecha Papanicolau:<input type="text" id="Fecha Papanicolau" name="fname" placeholder="Hace 2 años - Normal"></td> </td>
-    <td> Fecha Mastografía: <input type="text" id="Fecha Mastografía" name="fname" placeholder="2025-11-15"></td>
-  </tr>
-
-
-</table>
-
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-
-<h2>Medicación Actual:</h2>
-
-<table style="width:100%">
-<tr>
-    <td>Medicamento:<input type="text" id="Medicamento" name="fname" placeholder="Metformina"></td>
-    <td>Dosis: <input type="text" id="Dosis" name="fname" placeholder="500 mg cada 8 horas"></td>
-    <td>Fecha de inicio: <input type="text" id="FechaInicio" name="fname" placeholder="2026-03-10"></td>
-  </tr>
-  <tr>
-    <td>Suplementos alimentarios <input type="text" id="Suplementos" name="fname" placeholder="Calcio 1000 mg, Probióticos, Complejo B, Multivitamínicos diarios"></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-</table>
-
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-
-<h2>Padecimiento Actual</h2>
-
-<table style="width:100%">
-<tr>
-    <td> <input type="text" id="PadecimientoActual" name="fname" placeholder="Refiere inicio de padecimiento desde el día 31 de marzo con sintomatología de fiebre, dolor abdominal intenso, distensión abdominal y presencia de sonda Foley por procedimiento reciente."></td>
-
-</table>
-
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-
-<h2>Interrogatorio por Aparatos y Sistemas</h2>
-
-<table style="width:100%">
-<tr>
-    <td>Digestivo:</td>
-    <td><input type="text" id="Digestivo" name="fname" placeholder="Náuseas, mareos, vómito bilioso, distensión abdominal"></td>
-</tr>
-<tr>
-    <td>Respiratorio: </td>
-    <td><input type="text" id="Respiratorio" name="fname" placeholder="Niega disnea, tos o expectoración"></td>
-</tr>
-<tr>
-    <td>Circulatorio:</td>
-    <td><input type="text" id="Circulatorio" name="fname" placeholder="Edema de miembros inferiores, niega palpitaciones, sin dolor precordial"></td>
-</tr>
-<tr>
-    <td>Musculoesquelético: </td>
-    <td><input type="text" id="Musculoesquelético" name="fname" placeholder="Debilidad generalizada, edema e hipersensibilidad de miembros inferiores, dolor articular leve"></td>
-</tr>
-<tr>
-    <td>Nervioso:</td>
-    <td><input type="text" id="Nervioso" name="fname" placeholder="Niega cefaleas, mareos ocasionales, estado mental lucido y orientado"></td>
-</tr>
-<tr>
-    <td>Urinario:</td>
-    <td><input type="text" id="Urinario" name="fname" placeholder="Disuria referida, presencia de sonda Foley, orina turbía"></td>
-</tr>
-<tr>
-    <td>Reproductor:</td>
-    <td> <input type="text" id="Reproductor" name="fname" placeholder="Interrogados y negados por post-menopáusica"></td>
-</tr>
-<tr>
-    <td>Sentidos: </td>
-    <td><input type="text" id="Sentidos" name="fname" placeholder="Uso de lentes para lectura, audición normal bilateral"></td>
-</tr>
-
-</table>
-
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
-
-<h2>Exploración Física</h2>
-
-<table style="width:100%">
-<tr>
-    <td>TA: <input type="text" id="TA" name="fname" placeholder="116/80 mmHg"></td>
-    <td>Pulso:<input type="text" id="Pulso" name="fname" placeholder="77 por minuto"> </td>
-    <td>FR:<input type="text" id="FR" name="fname" placeholder="22 por minuto"> </td>
-    <td>Sat: <input type="text" id="Sat" name="fname" placeholder="94% al aire ambiente"> </td>
-    <td>Temp:<input type="text" id="Temp" name="fname" placeholder="37.4°C"> </td>
-  </tr>
-  <tr>
-    <td>Inspección <input type="text" id="Inspeccion" name="fname" placeholder="Auscultación, Palpación, Percusión"> <br><br><input type="text" id="Instrumental" name="fname" placeholder="Estetoscopio, Martillo de reflejos, Termómetro"> <input type="text" id="Metodo" name="fname" placeholder="Directo e indirecto"></td>
-</tr>
-
-</table>
-
-<h5>Exámenes de laboratorio y gabinete:</h5>
-<p><input type="text" id="Examenes" name="fname" placeholder="BH: Leucocitosis 15,000, Plaquetas normales. Química sanguínea: Creatinina elevada 1.8. Urocultivo: Positivo para E. coli. Tomografía abdominal: Posible perforación intestinal"></p>
-
-<h5>Impresión diagnóstica:</h5> <p><input type="text" id="Impresion" name="fname" placeholder="Posible urosepsis, descartar perforación de tubo digestivo secundario a procedimiento bariátrico, insuficiencia renal aguda"></p>
-
-<h5>Plan Diagnóstico:</h5> <p><input type="text" id="PlanDiagnostico" name="fname" placeholder="Continuar estudios de laboratorio seriados, Tomografía abdominal con contraste, Urocultivo de control, Consulta Cirugía General"></p>
-
-<h5>Plan Terapéutico:</h5> <p><input type="text" id="PlanTerapeutico" name="fname" placeholder="Antibioticoterapia empírica: Ceftriaxona 2g IV c/12h + Metronidazol 500mg IV c/8h, Hidratación IV, Sonda Foley con monitoreo, Manejo del dolor, Valoración quirúrgica"></p>
-
-<h5>Nombre y Firma de quien realiza la historia clínica</h5>
-<hr>
-<p><input type="text" id="MedicoFirma" name="fname" placeholder="Dr. Nava García - Médico General - Cédula: XXXXXXXXXXXX"></p>
-<button type="button" onclick="enviar()">Enviar datos</button>
-<p id="mensaje"></p>
-<script>
-function enviar() {
-
-  // 1. Leer valores de los 10 primeros campos
-  const fechaHistoriaClinica = document.getElementById("Fecha de Historia clinica").value;
-  const nombrePaciente = document.getElementById("Nombre del paciente").value;
-  const edad = document.getElementById("Edad ").value;
-  const domicilio = document.getElementById("Domicilio").value;
-  const telefono = document.getElementById("Telefono").value;
-  const familiarResponsable = document.getElementById(">Datos completos de familiar responsable").value;
-  const religion = document.getElementById("Religion").value;
-  const fechaNacimiento = document.getElementById("Fecha de nacimiento").value;
-  const peso = document.getElementById("Peso").value;
-  const lugarNacimiento = document.getElementById("Lugar de Nacimiento").value;
-
-  document.getElementById("mensaje").innerText = "Completa los campos";
-
-  // 2. Validación de campos vacíos
-  if (
-    fechaHistoriaClinica === "" ||
-    nombrePaciente === "" ||
-    edad === "" ||
-    domicilio === "" ||
-    telefono === "" ||
-    familiarResponsable === "" ||
-    religion === "" ||
-    fechaNacimiento === "" ||
-    peso === "" ||
-    lugarNacimiento === ""
-  ) {
-    return;
-  }
-
-  // 3. Empaquetar los datos para el envío
-  const datos = {
-    fechaHistoriaClinica,
-    nombrePaciente,
-    edad,
-    domicilio,
-    telefono,
-    familiarResponsable,
-    religion,
-    fechaNacimiento,
-    peso,
-    lugarNacimiento
-  };
-
-  // 4. Envío de datos al Web App de Google
- fetch("https://script.google.com/macros/s/AKfycbz01biL5pQ5u-I0Hen7V9YDj5U79DdyMERWHh8gxjmKf1FzVFVFL3lftnkGXuH9QGn0_w/exec", {
-    method: "POST",
-    body: JSON.stringify(datos),
-    mode: "no-cors"
-  })
-    .then(() => {
-      document.getElementById("mensaje").innerText = "Datos enviados";
-      limpiarFormulario();
-    })
-    .catch(() => {
-      document.getElementById("mensaje").innerText = "Error al enviar";
-    });
-}
-
-// 5. Función para limpiar todos los campos
-function limpiarFormulario() {
-  const inputs = document.querySelectorAll("input");
-  inputs.forEach(input => {
-    if (input.type === "text" || input.type === "date") {
-      input.value = "";
+  <style>
+    :root {
+      --primary: #0056b3;
+      --secondary: #00a0df;
+      --light: #f8f9fa;
+      --gray: #555;
     }
-  });
-}
-</script>
 
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #e6eef7);
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+    }
+
+    .logo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 6px solid white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 15px;
+    }
+
+    h1 { font-size: 1.8rem; margin: 10px 0; }
+    .subtitle { font-size: 1.1rem; opacity: 0.95; }
+
+    .section {
+      padding: 25px 30px;
+      border-bottom: 1px solid #eee;
+    }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 3px solid var(--secondary);
+      padding-bottom: 8px;
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--gray);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px rgba(0, 160, 223, 0.2);
+      outline: none;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .full-width { grid-column: 1 / -1; }
+
+    .button {
+      background: var(--primary);
+      color: white;
+      padding: 14px 32px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 25px auto;
+      display: block;
+    }
+
+    .button:hover { background: #003d80; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <img src="https://3.bp.blogspot.com/-TkM84bOpTQs/UGyXg1qrKuI/AAAAAAAABaw/vGwy6B9eAH0/s1600/LOGOTIPO+HOSPITAL+GENERAL+TIJUANA.jpg" 
+           alt="Logo Hospital General Tijuana" class="logo">
+      <p><strong>Hospital General Tijuana en Zona Río</strong><br>
+      AV. CENTENARIO 10851, Tijuana, B.C.</p>
+      <h1>Historia Clínica</h1>
+      <p class="subtitle">Norma Oficial Mexicana NOM-168-SSA1-1998</p>
+    </header>
+
+    <!-- Datos Generales -->
+    <div class="section">
+      <h2>Datos Generales del Paciente</h2>
+      <div class="row">
+        <div>
+          <label>Médico Tratante</label>
+          <input type="text" id="medico" value="Dr. Nava García">
+        </div>
+        <div>
+          <label>Fecha de Historia Clínica</label>
+          <input type="date" id="fechaHistoria" value="2026-05-19">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Nombre Completo</label>
+          <input type="text" id="nombre" value="María Rodríguez López">
+        </div>
+        <div>
+          <label>Edad</label>
+          <input type="text" id="edad" value="68 años">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Domicilio</label>
+          <input type="text" id="domicilio" value="Avenida Paseo de la República 1500, Apt. 302">
+        </div>
+        <div>
+          <label>Teléfono</label>
+          <input type="tel" id="telefono" value="(664) 345-64870">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Familiar Responsable</label>
+          <input type="text" id="familiar" value="Juan Pablo Osuna Gutiérrez - Hijo - (664) 345-1234">
+        </div>
+        <div>
+          <label>Religión</label>
+          <input type="text" id="religion" value="Católica">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Fecha de Nacimiento</label>
+          <input type="date" id="fechaNacimiento" value="1958-05-19">
+        </div>
+        <div>
+          <label>Peso</label>
+          <input type="text" id="peso" value="68 kg">
+        </div>
+      </div>
+    </div>
+
+    <!-- Antecedentes No Patológicos -->
+    <div class="section">
+      <h2>Antecedentes Personales No Patológicos</h2>
+      <div class="row">
+        <div>
+          <label>Lugar de Nacimiento</label>
+          <input type="text" id="lugarNacimiento" value="Tijuana, Baja California">
+        </div>
+        <div>
+          <label>Lugar de Residencia</label>
+          <input type="text" id="residencia" value="Tijuana, Baja California">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Hábito Tabáquico</label>
+          <input type="text" id="tabaco" value="Negado">
+        </div>
+        <div>
+          <label>Hábito Alcohólico</label>
+          <input type="text" id="alcohol" value="Negado">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Tipo de Sangre</label>
+          <input type="text" id="tipoSangre" value="O+ (O positivo)">
+        </div>
+        <div>
+          <label>Alergias</label>
+          <input type="text" id="alergias" value="Penicilina y Amoxicilina">
+        </div>
+      </div>
+    </div>
+
+    <!-- Padecimiento Actual -->
+    <div class="section">
+      <h2>Padecimiento Actual</h2>
+      <textarea id="padecimiento" rows="6" style="resize: vertical;">
+La paciente acude al servicio de urgencias por presentar cuadro de 19 días de evolución caracterizado por:
+
+• Fiebre intermitente hasta 38.8°C
+• Dolor abdominal difuso de intensidad moderada a severa
+• Distensión abdominal progresiva
+• Náuseas y vómito bilioso en 3 ocasiones
+• Disuria y orina turbia desde hace 5 días
+
+Refiere haber sido sometida a procedimiento bariátrico (bypass gástrico) hace 3 años. Hace 8 días se le colocó sonda Foley por retención urinaria. Actualmente presenta debilidad generalizada y edema en miembros inferiores.
+      </textarea>
+    </div>
+
+    <!-- Firma -->
+    <div class="section">
+      <h2>Nombre y Firma del Médico</h2>
+      <input type="text" id="firma" value="Dr. Nava García - Médico General - Cédula Profesional: 12345678" style="font-weight: bold; font-size: 1.1rem;">
+    </div>
+
+    <div style="text-align:center; padding: 20px;">
+      <button class="button" onclick="enviarHistoria()">Guardar Historia Clínica</button>
+      <p id="mensaje" style="margin-top: 15px; font-weight: 500; min-height: 24px;"></p>
+    </div>
+  </div>
+
+  <script>
+    function enviarHistoria() {
+      const mensaje = document.getElementById("mensaje");
+      mensaje.style.color = "#0066cc";
+      mensaje.textContent = "✅ Historia clínica guardada correctamente";
+      
+      setTimeout(() => {
+        mensaje.textContent = "";
+      }, 4000);
+    }
+  </script>
 </body>
 </html>
