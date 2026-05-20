@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historia Clínica - Hospital General Tijuana</title>
-  
+ 
   <style>
     :root {
       --primary: #0056b3;
@@ -13,16 +12,13 @@
       --light: #f8f9fa;
       --gray: #555;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to bottom, #f0f4f8, #e6eef7);
       color: #333;
       padding: 20px;
     }
-
     .container {
       max-width: 1100px;
       margin: 0 auto;
@@ -31,14 +27,12 @@
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
       overflow: hidden;
     }
-
     header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
       text-align: center;
       padding: 25px 20px;
     }
-
     .logo {
       width: 180px;
       height: 180px;
@@ -47,29 +41,24 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       margin-bottom: 15px;
     }
-
     h1 { font-size: 1.8rem; margin: 10px 0; }
     .subtitle { font-size: 1.1rem; opacity: 0.95; }
-
     .section {
       padding: 25px 30px;
       border-bottom: 1px solid #eee;
     }
-
     h2 {
       color: var(--primary);
       border-bottom: 3px solid var(--secondary);
       padding-bottom: 8px;
       margin-bottom: 18px;
     }
-
     label {
       display: block;
       font-weight: 600;
       margin-bottom: 5px;
       color: var(--gray);
     }
-
     input, textarea {
       width: 100%;
       padding: 10px 12px;
@@ -77,21 +66,17 @@
       border-radius: 6px;
       font-size: 1rem;
     }
-
     input:focus, textarea:focus {
       border-color: var(--secondary);
       box-shadow: 0 0 0 3px rgba(0, 160, 223, 0.2);
       outline: none;
     }
-
     .row {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
-
     .full-width { grid-column: 1 / -1; }
-
     .button {
       background: var(--primary);
       color: white;
@@ -103,7 +88,6 @@
       margin: 25px auto;
       display: block;
     }
-
     .button:hover { background: #003d80; transform: translateY(-2px); }
   </style>
 </head>
@@ -111,7 +95,7 @@
   <div class="container">
     <!-- Header -->
     <header>
-      <img src="https://3.bp.blogspot.com/-TkM84bOpTQs/UGyXg1qrKuI/AAAAAAAABaw/vGwy6B9eAH0/s1600/LOGOTIPO+HOSPITAL+GENERAL+TIJUANA.jpg" 
+      <img src="https://3.bp.blogspot.com/-TkM84bOpTQs/UGyXg1qrKuI/AAAAAAAABaw/vGwy6B9eAH0/s1600/LOGOTIPO+HOSPITAL+GENERAL+TIJUANA.jpg"
            alt="Logo Hospital General Tijuana" class="logo">
       <p><strong>Hospital General Tijuana en Zona Río</strong><br>
       AV. CENTENARIO 10851, Tijuana, B.C.</p>
@@ -123,58 +107,24 @@
     <div class="section">
       <h2>Datos Generales del Paciente</h2>
       <div class="row">
-        <div>
-          <label>Médico Tratante</label>
-          <input type="text" id="medico" value="Dr. Nava García">
-        </div>
-        <div>
-          <label>Fecha de Historia Clínica</label>
-          <input type="date" id="fechaHistoria" value="2026-05-19">
-        </div>
+        <div><label>Médico Tratante</label><input type="text" id="medico" value="Dr. Nava García"></div>
+        <div><label>Fecha de Historia Clínica</label><input type="date" id="fechaHistoria" value="2026-05-19"></div>
       </div>
-
       <div class="row">
-        <div>
-          <label>Nombre Completo</label>
-          <input type="text" id="nombre" value="María Rodríguez López">
-        </div>
-        <div>
-          <label>Edad</label>
-          <input type="text" id="edad" value="68 años">
-        </div>
+        <div><label>Nombre Completo</label><input type="text" id="nombre" value="María Rodríguez López"></div>
+        <div><label>Edad</label><input type="text" id="edad" value="68 años"></div>
       </div>
-
       <div class="row">
-        <div>
-          <label>Domicilio</label>
-          <input type="text" id="domicilio" value="Avenida Paseo de la República 1500, Apt. 302">
-        </div>
-        <div>
-          <label>Teléfono</label>
-          <input type="tel" id="telefono" value="(664) 345-64870">
-        </div>
+        <div><label>Domicilio</label><input type="text" id="domicilio" value="Avenida Paseo de la República 1500, Apt. 302"></div>
+        <div><label>Teléfono</label><input type="tel" id="telefono" value="(664) 345-64870"></div>
       </div>
-
       <div class="row">
-        <div>
-          <label>Familiar Responsable</label>
-          <input type="text" id="familiar" value="Juan Pablo Osuna Gutiérrez - Hijo - (664) 345-1234">
-        </div>
-        <div>
-          <label>Religión</label>
-          <input type="text" id="religion" value="Católica">
-        </div>
+        <div><label>Familiar Responsable</label><input type="text" id="familiar" value="Juan Pablo Osuna Gutiérrez - Hijo - (664) 345-1234"></div>
+        <div><label>Religión</label><input type="text" id="religion" value="Católica"></div>
       </div>
-
       <div class="row">
-        <div>
-          <label>Fecha de Nacimiento</label>
-          <input type="date" id="fechaNacimiento" value="1958-05-19">
-        </div>
-        <div>
-          <label>Peso</label>
-          <input type="text" id="peso" value="68 kg">
-        </div>
+        <div><label>Fecha de Nacimiento</label><input type="date" id="fechaNacimiento" value="1958-05-19"></div>
+        <div><label>Peso</label><input type="text" id="peso" value="68 kg"></div>
       </div>
     </div>
 
@@ -182,36 +132,16 @@
     <div class="section">
       <h2>Antecedentes Personales No Patológicos</h2>
       <div class="row">
-        <div>
-          <label>Lugar de Nacimiento</label>
-          <input type="text" id="lugarNacimiento" value="Tijuana, Baja California">
-        </div>
-        <div>
-          <label>Lugar de Residencia</label>
-          <input type="text" id="residencia" value="Tijuana, Baja California">
-        </div>
+        <div><label>Lugar de Nacimiento</label><input type="text" id="lugarNacimiento" value="Tijuana, Baja California"></div>
+        <div><label>Lugar de Residencia</label><input type="text" id="residencia" value="Tijuana, Baja California"></div>
       </div>
-
       <div class="row">
-        <div>
-          <label>Hábito Tabáquico</label>
-          <input type="text" id="tabaco" value="Negado">
-        </div>
-        <div>
-          <label>Hábito Alcohólico</label>
-          <input type="text" id="alcohol" value="Negado">
-        </div>
+        <div><label>Hábito Tabáquico</label><input type="text" id="tabaco" value="Negado"></div>
+        <div><label>Hábito Alcohólico</label><input type="text" id="alcohol" value="Negado"></div>
       </div>
-
       <div class="row">
-        <div>
-          <label>Tipo de Sangre</label>
-          <input type="text" id="tipoSangre" value="O+ (O positivo)">
-        </div>
-        <div>
-          <label>Alergias</label>
-          <input type="text" id="alergias" value="Penicilina y Amoxicilina">
-        </div>
+        <div><label>Tipo de Sangre</label><input type="text" id="tipoSangre" value="O+ (O positivo)"></div>
+        <div><label>Alergias</label><input type="text" id="alergias" value="Penicilina y Amoxicilina"></div>
       </div>
     </div>
 
@@ -220,7 +150,6 @@
       <h2>Padecimiento Actual</h2>
       <textarea id="padecimiento" rows="6" style="resize: vertical;">
 La paciente acude al servicio de urgencias por presentar cuadro de 19 días de evolución caracterizado por:
-
 • Fiebre intermitente hasta 38.8°C
 • Dolor abdominal difuso de intensidad moderada a severa
 • Distensión abdominal progresiva
@@ -237,22 +166,62 @@ Refiere haber sido sometida a procedimiento bariátrico (bypass gástrico) hace 
       <input type="text" id="firma" value="Dr. Nava García - Médico General - Cédula Profesional: 12345678" style="font-weight: bold; font-size: 1.1rem;">
     </div>
 
-    <div style="text-align:center; padding: 20px;">
+    <div style="text-align:center; padding: 30px;">
       <button class="button" onclick="enviarHistoria()">Guardar Historia Clínica</button>
-      <p id="mensaje" style="margin-top: 15px; font-weight: 500; min-height: 24px;"></p>
+      <p id="mensaje" style="margin-top: 15px; font-weight: 500; min-height: 28px;"></p>
     </div>
   </div>
-  <p>Elian Venzor 
-    Enrique Borja
+Elian Venzor Enrique Borja
   <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwr1Q5lV9jB0kmCxlS3BK9Cmut16XudDgsrfVQTtClCYvpURQhbcJ-Mi8huzqEoz8fcSw/exec";
+
     function enviarHistoria() {
       const mensaje = document.getElementById("mensaje");
       mensaje.style.color = "#0066cc";
-      mensaje.textContent = "✅ Historia clínica guardada correctamente";
-      
-      setTimeout(() => {
-        mensaje.textContent = "";
-      }, 4000);
+      mensaje.textContent = "Enviando datos...";
+
+      // Recoger todos los valores
+      const datos = {
+        fechaHistoriaClinica: document.getElementById("fechaHistoria").value,
+        nombrePaciente: document.getElementById("nombre").value,
+        edad: document.getElementById("edad").value,
+        domicilio: document.getElementById("domicilio").value,
+        telefono: document.getElementById("telefono").value,
+        familiarResponsable: document.getElementById("familiar").value,
+        religion: document.getElementById("religion").value,
+        fechaNacimiento: document.getElementById("fechaNacimiento").value,
+        peso: document.getElementById("peso").value,
+        lugarNacimiento: document.getElementById("lugarNacimiento").value,
+        tipoSangre: document.getElementById("tipoSangre").value,
+        alergias: document.getElementById("alergias").value,
+        tabaco: document.getElementById("tabaco").value,
+        alcohol: document.getElementById("alcohol").value,
+        padecimiento: document.getElementById("padecimiento").value,
+        medico: document.getElementById("medico").value,
+        firma: document.getElementById("firma").value
+      };
+
+      // Enviar datos a Google Apps Script
+      fetch(SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify(datos),
+        mode: "no-cors",           // Importante para Google Scripts
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+      .then(() => {
+        mensaje.style.color = "green";
+        mensaje.textContent = "✅ Datos enviados correctamente a la hoja de cálculo";
+        
+        // Opcional: limpiar formulario después de enviar
+        // setTimeout(() => location.reload(), 2000);
+      })
+      .catch((error) => {
+        console.error(error);
+        mensaje.style.color = "red";
+        mensaje.textContent = "❌ Error al enviar los datos";
+      });
     }
   </script>
 </body>
